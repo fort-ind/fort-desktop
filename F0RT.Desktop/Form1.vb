@@ -219,7 +219,7 @@ Public Class Form1
         WebView1.LoadUrl("https://www.fort1nd.com")
     End Sub
 
-    Private Sub GamesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles GamesToolStripMenuItem.Click
+    Private Sub GamesToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
         WebView1.LoadUrl("https://www.fort1nd.com/games")
     End Sub
 
@@ -233,5 +233,17 @@ Public Class Form1
 
     Private Sub FortforumsToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles FortforumsToolStripMenuItem.Click
         WebView1.LoadUrl("https://forums.fort1nd.com")
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Process.Start("cmd.exe", "/c taskkill /f /im " & Process.GetCurrentProcess().ProcessName & ".exe")
+    End Sub
+
+    Private Sub FortsocialToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FortsocialToolStripMenuItem.Click
+        WebView1.LoadUrl("https://social.fort1nd.com")
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        Form2.Show()
     End Sub
 End Class

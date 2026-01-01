@@ -69,7 +69,7 @@ Partial Class Form3
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(282, 28)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Fort.desktop version 1.12"
+        Me.Label2.Text = "Fort.desktop version 1.13"
         '
         'Form3
         '
